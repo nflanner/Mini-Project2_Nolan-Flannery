@@ -1,0 +1,104 @@
+:root {
+  --outer-space: #33393f;
+  --bright-turquoise: #2aefcb;
+  --gin: #e0eae4;
+  --heliotrope: #e866ec;
+}
+
+/* set content highlight color and background */
+::selection {
+  background-color: var(--bright-turquoise);
+  color: var(--outer-space);
+}
+  
+body {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gin);
+  background-color: var(--outer-space);
+}
+  
+header {
+  width: 96%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+  
+header h1.page-title {
+  padding: 1rem 1.2rem;
+  font-size: 4.5rem;
+}
+
+main {
+  flex-wrap: wrap;
+  margin-top: 2%;
+  border: 5px var(--large-content);
+}
+
+/* make main flexbox */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  justify-content: center;
+}
+
+/* start with largest screen size for columns */
+.column {
+  flex: 1 0 33%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+.small-content {
+  display: flex;
+  flex: 1 1 300px;
+  width: 33%;
+  height: 30%;
+  border: 5px var(--small-content);
+}
+  
+#small-content {
+  display: flex;
+  flex: 1 1 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: 5px;
+  border-color: var(--med-content);
+}
+  
+h2 {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+  border: 5px;
+  border-color: var(--small-content);
+}
+  
+#large-content {
+  display: flex;
+  width: 100%;
+  flex: 1 1 0;
+  padding: 10px;
+  text-align: center;
+  border: 5px;
+  border-color: var(--med-content);
+}
+
+.large-content {
+  display: flex;
+  flex: 1 1 300px;
+  width: 33%;
+  height: 30%;
+  border: 5px;
+  border-style: var(--small-content);
+}
+
+  
