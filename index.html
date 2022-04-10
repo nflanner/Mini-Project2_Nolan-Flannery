@@ -14,26 +14,115 @@
 
     <header>
       <h1 class="page-title">
-        Here is my header
+        CSS Snippet Cheatsheet
       </h1>
       <p>
-        Here is some content in my header
+        Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to
+        this page! Select any snippet below and it'll automatically select all of the code for you to copy.
       </p>
     </header>
 
     <main>
+
       <section class="row">
+
+        <!-- Top left content -->
         <div class="column">
-          
+          <content class="card">
+            <h2>Flexbox Row</h2>
+            <div>
+              <p>Use these three properties to create a Flexbox row layout.</p>
+            </div>
+            <!-- from example: with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
+            <pre class="code-block"><code>.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }</code></pre>
+          </content>
+        </div>
+
+        <!-- Top middle content -->
+        <div class="column">
+          <content class="card">
+            <h2>Flexbox Column</h2>
+            <div>
+              <p>Use this to create a Flexbox column layout.</p>
+            </div>
+            <pre class="code-block"><code>.column {
+    display: flex;
+    flex-direction: column
+    }</code></pre>
+          </content>
+        </div>
+
+        <!-- Top right content -->
+        <div class="column">
+          <content class="card">
+            <h2>CSS Grid Layout</h2>
+            <div>
+              <p>Build a 12-column layout using CSS Grid</p>
+            </div>
+            <pre class="code-block"><code>.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    }</code></pre>
+          </content>
+        </div>
+
+        <!-- Bottom left content -->
+        <div class="column">
+          <content class="card">
+            <h2>Linear Gradients</h2>
+            <div>
+              <p>This will create a background linear gradient from top to bottom.</p>
+            </div>
+            <pre class="code-block"><code>.linear-gradient-background {
+    background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+    }</code></pre>
+          </content>
+        </div>
+
+        <!-- Bottom middle content -->
+        <div class="column">
+          <content class="card">
+            <h2>Box Transition Glow</h2>
+            <div>
+              <p>Use transition and box shadows to glow on hover.</p>
+            </div>
+            <pre class="code-block"><code>.card h2 {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    }</code></pre>
+          </content>
+        </div>
+
+        <!-- Bottom right content -->
+        <div class="column">
+          <content class="card">
+            <h2>Overlay Card with Title</h2>
+            <div>
+              <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            </div>
+            <pre class="code-block"><code>h2 {
+    position: relative;
+    margin-top: -20px;
+    }</code></pre>
+          </content>
         </div>
 
       </section>
 
+    </main>
       
 
     <footer>
-        Here is my footer
+        <h3>Made with <span role="img" aria-label="heart">❤️</span> and CSS</h3>
     </footer>
+
   </body>
 
 </html>
