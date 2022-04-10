@@ -113,8 +113,8 @@ footer {
   /* outline is like border, but on the outside of the box instead of inside */
   /* outline: 2px dashed var(--text2);
   outline-offset: -2px; */
-  border: solid var(--text2);
-  border-radius: 5px;
+  border: 2px solid var(--text2);
+  border-radius: 10px;
   transition: all 0.5s ease-in-out;
 }
 
